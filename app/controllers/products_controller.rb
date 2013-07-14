@@ -1,14 +1,19 @@
 class ProductsController < ApplicationController
   expose(:products)
-  expose(:product, atributtes: :product_params)
+  expose(:product, attributes: :product_params)
 
   # GET /products
   def index
   end
 
   # GET /products/1
-  # GET /products/1.json
   def show
+  end
+
+  def new
+  end
+
+  def edit
   end
 
 
