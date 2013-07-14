@@ -1,0 +1,18 @@
+%div(ng-controller="createProductController")
+  %form.simple-form{:novalidate => ""}
+    Name:
+    %input{"ng-model" => "product.name", :type => "text"}/
+    %br/
+    Price:
+    %input{"ng-model" => "product.price", :type => "text"}/
+    %br/
+    Description:
+    %input{"ng-model" => "product.description", :type => "text"}/
+    %br/
+    Stock:
+    %input{"ng-model" => "product.stock", :type => "text"}/
+    %br/
+    %button{"ng-click" => "reset()"} Reset
+    %button{"ng-click" => "createProduct(product)"} Save
+  %pre form = 
+  %pre master = 
