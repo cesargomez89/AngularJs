@@ -14,7 +14,6 @@ class ProductsController < ApplicationController
 
   # POST /products
   def create
-    binding.pry
     if product.save
       redirect_to(product)
     else
