@@ -1,8 +1,9 @@
 traineesTango.controller('createProductController', ['$scope','$http', function($scope, $http){
   $scope.master= {};
+  $scope.product= {};
 
   $scope.createProduct = function(product){
-  $http.post('/products', { product: product }).success();
+  $http.post('/products', { product: product });
   };
 
   $scope.reset = function() {
